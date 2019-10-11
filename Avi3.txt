@@ -1,0 +1,71 @@
+#Soln for https://www.codechef.com/AUG19B/problems/ZOMCAV
+
+C++
+
+
+
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+void toprefix(ll arr[], int n);
+void updata(ll arr[], int lo, int hi, int n);
+void updata(ll arr[],int lo, int hi, int n)
+{
+    arr[lo]+=1;
+    if((hi+1)<n)
+    arr[hi+1]-=1;
+}
+void toprefix(ll arr[], int n)
+{
+    for(int i=0;i<n;++i)
+        arr[i+1]+=arr[i];
+}
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        ll c[100000], h[100000], rad_lev[n];
+        for(int i=0;i<n;++i)
+        {
+            cin>>c[i];
+            rad_lev[i]=0;
+        }
+        for(int i=0;i<n;++i)
+        cin>>h[i];
+        int low,high;
+        for(int i=0;i<n;++i)
+        {
+            low=i-c[i];
+            if(low<0)
+            low=0;
+            high=i+c[i];
+            if(high>(n-1))
+            high=n-1;
+            updata(rad_lev,low,high,n);
+        }
+        toprefix(rad_lev,n);
+        sort(rad_lev,rad_lev+n);
+        sort(h,h+n);
+        int f=1;
+        for(ll i=0;i<n;++i)
+        {
+            if(rad_lev[i]!=h[i])
+            {
+                f=0;
+                break;
+            }
+        }
+        f==1?cout<<"YES\n":cout<<"NO\n";
+    }
+    return 0;
+
+}
