@@ -1,0 +1,33 @@
+SOLN FOR https://www.codechef.com/APRIL19B/problems/MAXREM
+C++
+
+
+
+#include <bits/stdc++.h>    //for faster i/o
+using namespace std;
+int main() 
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int n,ip;
+    cin>>n;
+    vector<int> a;
+    for(int l=0;l<n;l++){
+        cin>>ip;
+        a.emplace_back(ip);
+    }
+    vector<int> rem;
+    for(int i=0;i<n;i++){
+        for(int j=1;j<n;j++) {         
+            if(i!=j)   
+            { rem.emplace_back(a[i]%a[j]);}
+        }
+    }
+    int max=rem[0];
+    for(int k=0;k<rem.size();k++) {
+        if(rem[k]>max)
+        {max=rem[k];}
+    }
+    cout<<max;
+    return 0;
+}
