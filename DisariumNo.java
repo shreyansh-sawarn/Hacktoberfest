@@ -32,6 +32,6 @@ public class DisariumNumber
         {
             System.out.println("Not Disarium Number");
         }
-        
+     
     }
 }
