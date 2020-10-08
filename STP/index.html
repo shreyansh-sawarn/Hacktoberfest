@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon1.jpg">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="score-board">
+        <div id="user-label" class="badge">comp</div>
+        <div id="comp-label" class="badge">user</div>
+        <span id="comp-score">0</span>:<span id="user-score">0</span>
+    </div>
+    <div class="nmatch">
+        <h4>Match:<span id="pmatch">1</span>/<span id="tmatch">5</span></h4>
+    </div>
+    <div class="option" id="option">
+        <img src="paper.png" class="paper" alt="paper" id="paper" onclick="play(this.id)">
+        <img src="rock.png" alt="stone" class="stone" id="stone" onclick="play(this.id)">
+        <img src="scissors.png" alt="scissor" class="scissor" id="scissor" onclick="play(this.id)">
+    </div>
+    <h2 class="pc" style="color: aliceblue;">Computer</h2>
+    <div id="computer"></div>
+
+    <h2 class="you" style="color: aliceblue;">You</h2>
+    <div id="player"></div>
+
+    <h3 id="Result" style="color: white;"></h3>
+    <h3 class="move">Make Your Move 💪</h3>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="text"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
