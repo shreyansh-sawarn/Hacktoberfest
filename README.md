@@ -39,6 +39,5 @@ git push origin branch-name
 * Make a pull request.
 * Star the repository if you like.
 
-> **Note:** "Please don't make any changes to README.MD"
+> **Note:** "Please don't make any changes to README.md"
    
-<!--       END OF README           END OF README         END OF README         END OF README          END OF README           END OF README           END OF README      -->
