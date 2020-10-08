@@ -18,11 +18,11 @@ https://hacktoberfest.digitalocean.com/</p>
 * Fork the repository (Click the Fork button in the top right of this page, click your Profile Image)
 * Clone the forked repository to your local machine.
 ```markdown
-git clone https://github.com/your-username/HacktoberFest2020.git
+git clone https://github.com/your-username/HacktoberFest.git
 ```
 * change the present working directory
 ```markdown
-cd HacktoberFest2020
+cd HacktoberFest
 ```
 * Pick a project or make a new one
 * Make a new branch
