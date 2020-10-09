@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!--linking css file -->
+      <link rel="stylesheet" href="styles.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--font awesome kit code-->
+    <script src="https://kit.fontawesome.com/7886940eea.js" crossorigin="anonymous"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+      <!--navbar-->
+      <nav>
+        <div class="nav-wrapper teal">
+          <a href="#!" class="brand-logo center ">InfoPAge</a>
+            
+        </div>
+      </nav>
+    
+      
+      <!--Page-->
+      <div class="row row_img"> 
+        <img src="paper-3033204.jpg" class="responsive-img" alt="">
+          <div class="col s12 l4 center offset-l4 ">
+             <!-- Modal Trigger -->
+             <a class="waves-effect waves-light btn modal-trigger button" href="#modal1">Add new form</a>
+
+             <!-- Modal Structure -->
+             <div id="modal1" class="modal">
+               <div class="modal-content">
+                 <h4 class="teal-text">Add Details</h4>
+                 <span><p>Lets gather some information about you..</p></span>
+               </div>
+               <div class="row ">
+                <div class="modal_body">
+                    <div class="input-field col l6 offset-l3 s12">
+                      <input  placeholder="Degree name" id="first_name2" type="text" >
+                      <label class="active" for="first_name2">Tell us about which degree u want to tell us information</label>
+                    </div>
+                    <div class="input-field col l6 offset-l3 s12">
+                        <input placeholder="passout year" id="first_name2" type="text" >
+                        <label class="active" for="first_name2">Tell us in which year ou are going to passout</label>
+                    </div>
+                    <div class="input-field col l6 offset-l3 s12">
+                        <input placeholder="percentage" id="first_name2" type="text" >
+                        <label class="active" for="first_name2">Tell us about your percentage or cgpa in your college</label>
+                    </div>
+                    <div class="file-field col l6 offset-l3 s12 input-field">
+                        <div class="btn">
+                          <span>File</span>
+                          <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+
+                  </div>
+               </div>
+               <div class="modal-footer">
+                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+               </div>
+             </div>
+          </div>
+      </div>
+    <!--tableHeading-->
+    <div class="teal-text" id="tableheading">
+        <span>
+            <h4>10th Class Details... 
+                <div class="right">
+                    <!-- Modal Trigger -->
+                <a class="waves-effect waves-light modal-trigger" href="#modal2"><i class="material-icons">edit</i></a>
+                </div>                
+            </h4>
+        </span>
+         <!-- Modal Structure -->
+         <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Edit your 10th class details...</h4>
+                
+            </div>
+            <div class="row ">
+              <div class="modal_body">
+                  <div class="input-field col l6 offset-l3 s12">
+                    <input  placeholder="Degree name" id="first_name2" type="text" >
+                    <label class="active" for="first_name2">Tell us about which degree u want to tell us information</label>
+                  </div>
+                  <div class="input-field col l6 offset-l3 s12">
+                      <input placeholder="passout year" id="first_name2" type="text" >
+                      <label class="active" for="first_name2">Tell us in which year ou are going to passout</label>
+                  </div>
+                  <div class="input-field col l6 offset-l3 s12">
+                      <input placeholder="percentage" id="first_name2" type="text" >
+                      <label class="active" for="first_name2">Tell us about your percentage or cgpa in your college</label>
+                  </div>
+                  <div class="file-field col l6 offset-l3 s12 input-field">
+                      <div class="btn">
+                        <span>File</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
+                  </div>
+
+                </div>
+             </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+            </div>
+        </div>
+        
+    </div>
+      <!--table-->
+      <div class="row">
+        <div class="col s12  l12 ">
+          <table class="striped centered">
+            <tbody>
+                <tr>
+                      <th>Degree Name</th>
+                      <td>10th class</td>            
+                 </tr>
+                <tr>
+                    <th>Batch</th>
+                    <td>2017</td>            
+                </tr>
+                <tr>
+                    <th>Percentage</th>
+                    <td>10 cgpa</td>            
+                </tr>
+                <tr>
+                    <th>File uploaded</th>
+                    <td>file101</td>            
+                </tr>
+                </tbody>
+          </table>
+        </div>
+      </div>
+      <!--table2-->
+      <!--tableHeading-->
+    <div class="teal-text" id="tableheading">
+      <span>
+          <h4>12th Class Details... 
+              <div class="right">
+                  <!-- Modal Trigger -->
+              <a class="waves-effect waves-light modal-trigger" href="#modal3"><i class="material-icons">edit</i></a>
+              </div>                
+          </h4>
+      </span>
+       <!-- Modal Structure -->
+       <div id="modal3" class="modal">
+          <div class="modal-content center">
+              <h4>Edit your 12th class details...</h4>
+              
+          </div>
+          <div class="row ">
+            <div class="modal_body">
+                <div class="input-field col l6 offset-l3 s12">
+                  <input  placeholder="Degree name" id="first_name2" type="text" >
+                  <label class="active" for="first_name2">Tell us about which degree u want to tell us information</label>
+                </div>
+                <div class="input-field col l6 offset-l3 s12">
+                    <input placeholder="passout year" id="first_name2" type="text" >
+                    <label class="active" for="first_name2">Tell us in which year ou are going to passout</label>
+                </div>
+                <div class="input-field col l6 offset-l3 s12">
+                    <input placeholder="percentage" id="first_name2" type="text" >
+                    <label class="active" for="first_name2">Tell us about your percentage or cgpa in your college</label>
+                </div>
+                <div class="file-field col l6 offset-l3 s12 input-field">
+                    <div class="btn">
+                      <span>File</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                </div>
+
+              </div>
+           </div>
+          <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+          </div>
+      </div>
+      
+  </div>
+    <!--table-->
+    <div class="row">
+      <div class="col s12  l12 ">
+        <table class="striped centered">
+          <tbody>
+              <tr>
+                    <th>Degree Name</th>
+                    <td>12th class</td>            
+               </tr>
+              <tr>
+                  <th>Batch</th>
+                  <td>2019</td>            
+              </tr>
+              <tr>
+                  <th>Percentage</th>
+                  <td>10 cgpa</td>            
+              </tr>
+              <tr>
+                  <th>File uploaded</th>
+                  <td>file102</td>            
+              </tr>
+              </tbody>
+        </table>
+      </div>
+    </div>
+    <!--table3-->
+    <!--tableHeading-->
+    <div class="teal-text" id="tableheading">
+      <span>
+          <h4>Graduation Details... 
+              <div class="right">
+                  <!-- Modal Trigger -->
+              <a class="waves-effect waves-light modal-trigger" href="#modal4"><i class="material-icons">edit</i></a>
+              </div>                
+          </h4>
+      </span>
+       <!-- Modal Structure -->
+       <div id="modal4" class="modal">
+          <div class="modal-content center">
+              <h4>Edit your graduation details...</h4>
+              
+          </div>
+          <div class="row ">
+            <div class="modal_body">
+                <div class="input-field col l6 offset-l3 s12">
+                  <input  placeholder="Degree name" id="first_name2" type="text" >
+                  <label class="active" for="first_name2">Tell us about which degree u want to tell us information</label>
+                </div>
+                <div class="input-field col l6 offset-l3 s12">
+                    <input placeholder="passout year" id="first_name2" type="text" >
+                    <label class="active" for="first_name2">Tell us in which year ou are going to passout</label>
+                </div>
+                <div class="input-field col l6 offset-l3 s12">
+                    <input placeholder="percentage" id="first_name2" type="text" >
+                    <label class="active" for="first_name2">Tell us about your percentage or cgpa in your college</label>
+                </div>
+                <div class="file-field col l6 offset-l3 s12 input-field">
+                    <div class="btn">
+                      <span>File</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                </div>
+
+              </div>
+           </div>
+          <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+          </div>
+      </div>
+      
+  </div>
+    <!--table-->
+    <div class="row">
+      <div class="col s12  l12 ">
+        <table class="striped centered">
+          <tbody>
+              <tr>
+                    <th>Degree Name</th>
+                    <td>Btech</td>            
+               </tr>
+              <tr>
+                  <th>Batch</th>
+                  <td>yet to pass</td>            
+              </tr>
+              <tr>
+                  <th>Percentage</th>
+                  <td></td>            
+              </tr>
+              <tr>
+                  <th>File uploaded</th>
+                  <td>file101</td>            
+              </tr>
+              </tbody>
+        </table>
+      </div>
+    </div>
+    <!--Post graduation table-->
+    <!--tableHeading-->
+    <div class="teal-text" id="tableheading">
+      <span>
+          <h4>Post graduation Details... 
+              <div class="right">
+                  <!-- Modal Trigger -->
+              <a class="waves-effect waves-light modal-trigger" href="#modal5"><i class="material-icons">edit</i></a>
+              </div>                
+          </h4>
+      </span>
+       <!-- Modal Structure -->
+       <div id="modal5" class="modal">
+          <div class="modal-content center">
+              <h4>Edit your Post graduation details...</h4>
+              
+          </div>
+          <div class="row ">
+            <div class="modal_body">
+                <div class="input-field col l6 offset-l3 s12">
+                  <input  placeholder="Degree name" id="first_name2" type="text" >
+                  <label class="active" for="first_name2">Tell us about which degree u want to tell us information</label>
+                </div>
+                <div class="input-field col l6 offset-l3 s12">
+                    <input placeholder="passout year" id="first_name2" type="text" >
+                    <label class="active" for="first_name2">Tell us in which year ou are going to passout</label>
+                </div>
+                <div class="input-field col l6 offset-l3 s12">
+                    <input placeholder="percentage" id="first_name2" type="text" >
+                    <label class="active" for="first_name2">Tell us about your percentage or cgpa in your college</label>
+                </div>
+                <div class="file-field col l6 offset-l3 s12 input-field">
+                    <div class="btn">
+                      <span>File</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                </div>
+
+              </div>
+           </div>
+          <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+          </div>
+      </div>
+      
+  </div>
+    <!--table-->
+    <div class="row">
+      <div class="col s12  l12 ">
+        <table class="striped centered">
+          <tbody>
+              <tr>
+                    <th>Degree Name</th>
+                    <td>Mtech</td>            
+               </tr>
+              <tr>
+                  <th>Batch</th>
+                  <td>2025</td>            
+              </tr>
+              <tr>
+                  <th>Percentage</th>
+                  <td>yet to pass out</td>            
+              </tr>
+              <tr>
+                  <th>File uploaded</th>
+                  <td>file102</td>            
+              </tr>
+              </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            //init sidenav
+            $('.sidenav').sidenav();
+            //init modal
+            $('.modal').modal();
+        });
+    </script>        
+  </body>
+</html>
+      
