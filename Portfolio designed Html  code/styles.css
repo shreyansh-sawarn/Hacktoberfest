@@ -1,0 +1,12 @@
+.button{
+    position: relative;
+   
+}
+.modal_body{
+    padding-left:  30px;
+    padding-right:30px ;
+}
+#tableheading{
+    padding-right: 20px;
+    padding-left: 10px;
+}
