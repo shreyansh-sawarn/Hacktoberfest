@@ -36,7 +36,7 @@ git add .
 git commit -m "Your commit Message"
 git push origin branch-name
 ```
-* Make a pull request.
+* Make a pull request. Please provide description of your code while making a pull request.
 * Star the repository if you like.
 
 > **Note:** "Please don't make any changes to README.md"
