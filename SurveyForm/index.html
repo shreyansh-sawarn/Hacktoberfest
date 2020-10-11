@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+  </head>
+  <body>
+    <div id="outside">
+      <form id="survey-form" action="/my-handling-form-page" method="post">
+        <h1>Application for Permission</h1>
+        <p id="description"> <b>Note :</b>This form is to be completed atleast 21 days prior to the date</p>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div id="name-label">
+            <label for="name">Name:</label>
+            <input type="text" name="user_name" id="name" placeholder="Enter name here">
+          </div>
+          <div id="address-label">
+            <label for="address">Address:</label>
+            <input type="text" name="user_address" id="address" placeholder="Enter Address here">
+          </div>
+          <div id="email-label">
+            <label for="email">Email : </label>
+            <input type="email" name="user_email" id="email" placeholder="Enter email here">
+          </div>
+          <div id="phoneNo-label">
+            <label for="phone">PhoneNo:</label>
+            <input type="number" name="user_phone" id="phone" placeholder="Enter phoneNo here">
+          </div>
+          <div >
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="Gender" value="male" checked> Male<br>
+            <input type="radio" name="Gender" value="female"> Fe-Male<br>
+            <input type="radio" name="Gender" value="other"> Others<br>
+          </div>
+          <label for="date-label">Date of proposal</label>
+          <input type="date" name="bday" >
+        </fieldset>
+        <fieldset>
+          <label for="poli">Political persuasion:</label>
+          <select id="dropdown" name="party">
+            <option value="BJP">BJP</option>
+            <option value="CONGRESS">CONGRESS</option>
+            <option value="AAP">AAP</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Essay Section</legend>
+          <div>
+            <p>In about 50 words explain the purpose</p>
+            <textarea name="for" rows="8" cols="80" placeholder="enter your message here"></textarea>
+          </div>
+
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+  </body>
+</html>
