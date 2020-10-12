@@ -29,7 +29,7 @@ cd Hacktoberfest
 ```markdown
 git checkout -b branch-name
 ```
-* Make changes in the repository with the new branch. Add your files according to folders assigned. If you can't find a folder, raise an issue and I will get back to you and meanwhile you can make PRs in the "Others" folder.
+* Make changes in the repository with the new branch. Add your files according to folders assigned. If you can't find a folder, raise an issue and I will get back to you and meanwhile you can add your files in the "Others" folder.
 * Push the changes.
 ```markdown
 git add .
