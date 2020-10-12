@@ -29,8 +29,8 @@ cd Hacktoberfest
 ```markdown
 git checkout -b branch-name
 ```
-* Make change in the repository with the new branch.
-* push the changes.
+* Make change in the repository with the new branch. Add your files according to folders assigned.
+* Push the changes.
 ```markdown
 git add .
 git commit -m "Your commit Message"
