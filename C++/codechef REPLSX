@@ -1,0 +1,86 @@
+    // CODECHEF \\
+ 
+#include<bits/stdc++.h>
+using namespace std;
+/*
+// Ordered Set
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+typedef tree<int, null_type,less<int>, rb_tree_tag,tree_order_statistics_node_update> ordered_set;
+#define os_find(k) find_by_order(k)
+#define os_order(k) order_of_key(k)
+*/
+
+
+#define ll long long
+#define fast ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define test int t; cin>>t; while(t--)
+#define pb push_back
+#define mp(a,b) make_pair(a,b)
+#define f0(i,n) for( ll i = 0; i < ( n ); i ++)
+#define f1(i,n) for(i = 1; i <= ( n ); i ++)
+#define f(i,m,n) for(auto i = ( m ); i <= ( n ); i ++)
+#define nl cout<<"\n"
+#define  MOD 1000000007
+#define fi first
+#define se second
+#define all(a) a.begin(),a.end()
+#define rall(v) v.rbegin(), v.rend()
+#define SZ(x) ((ll)x.size())
+#define mem(a, b) memset(a, b, sizeof(a));
+#define make_graph(k) int x,y; f0(i,k){cin>>x>>y; adj[x].pb(y); adj[y].pb(x);}
+#define dekh cout<<"dekh"
+
+typedef vector<ll> vl;
+
+int main()
+{
+    fast
+     test
+     {
+        ll n ,x ,p ,k;   cin>>n>>x>>p>>k;
+        ll arr[n]; f0(i,n)cin>>arr[i];
+        sort(arr, arr+n);
+
+        if(p<k)
+        {
+            if(arr[p-1] < x){cout<<"-1";nl;continue;}
+            else if (arr[p-1] == x){cout<<"0";nl;continue;}
+            else 
+            {
+                ll ind = upper_bound(arr ,arr +n ,x) - arr;
+                cout<< p - ind; nl; continue;
+            }
+        }
+        else if (p > k)
+
+        {
+            if(arr[p-1] > x){cout<<"-1";nl; continue;}
+            else if (arr[p-1] == x){cout<<"0";nl;continue;}
+            else
+            {
+                ll ind = lower_bound(arr, arr+n , x) - arr;
+               // if(arr[ind-1]==x)ind--;
+                cout<<ind+1-p;nl;continue;
+
+            }
+        }
+        else
+        {
+            if(arr[p-1]==x){cout<<"0";nl;continue;}
+
+            if(x< arr[k-1])
+            {
+                ll ind = upper_bound(arr ,arr+n , x) - arr;
+                cout<< k - ind ;nl;continue;
+            }
+            else
+            {
+                ll ind = lower_bound(arr, arr+n , x) - arr;
+                cout<<ind + 1 -k;nl; continue;
+            }
+        }
+     }
+}
+
