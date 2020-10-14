@@ -13,5 +13,7 @@ You can then use it to run your own SQLite database for any app you need and sim
   <summary>SQLite Library</summary>
   Using [this library](https://deno.land/x/sqlite@v2.3.0) makes whole lot of it easy, the interface is smart and modular for each query you need. Imported with `import { DB } from "https://deno.land/x/sqlite/mod.ts";`
 </details>
+
 ---
+
 Submitted by [dergyitheron](https://github.com/dergyitheron)
