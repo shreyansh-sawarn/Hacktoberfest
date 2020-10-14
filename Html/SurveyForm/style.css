@@ -1,0 +1,28 @@
+body{
+font-size: 1.2em;
+}
+div{
+  margin-top: 3px;
+}
+#outside{
+  background-color: lightgoldenrodyellow;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+h1{
+  text-align: center;
+}
+form{
+  width: 70%;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 1.5em;
+  border:1px solid grey;
+}
+#survey-form{
+  background-color: #fff;
+}
+input:focus{
+  border-color:  orangered;
+}
