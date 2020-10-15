@@ -19,4 +19,4 @@ def convert(imagefile, new_width=100):
 
 
 if __name__ == "__main__":
-	convert("shawn.jpg")
+	convert("enter path to file here")
