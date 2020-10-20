@@ -57,3 +57,4 @@ let utilites = {
         return tester.test(uri);
     },
 }
+export default utilites;
