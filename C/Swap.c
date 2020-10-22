@@ -1,16 +1,25 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+int main()
 {
-	int  a,b,temp;
-	printf("Enter a=");
-	scanf("%d",&a);
-	printf("Enter b=");
-	scanf("%d",&b);
-	
-	temp=a;
-	a=b;
-	b=temp;
-	printf("\nAfter swapping");
-	printf("\na=%d",a);
-	printf("\nb=%d",b);
+      double firstNumber, secondNumber, temporaryVariable;
+
+      printf("Enter first number: ");
+      scanf("%lf", &firstNumber);
+
+      printf("Enter second number: ");
+      scanf("%lf",&secondNumber);
+
+      // Value of firstNumber is assigned to temporaryVariable
+      temporaryVariable = firstNumber;
+
+      // Value of secondNumber is assigned to firstNumber
+      firstNumber = secondNumber;
+
+      // Value of temporaryVariable (which contains the initial value of firstNumber) is assigned to secondNumber
+      secondNumber = temporaryVariable;
+
+      printf("\nAfter swapping, firstNumber = %.2lf\n", firstNumber);
+      printf("After swapping, secondNumber = %.2lf", secondNumber);
+
+      return 0;
 }

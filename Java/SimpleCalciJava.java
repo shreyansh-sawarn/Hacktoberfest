@@ -1,6 +1,6 @@
-**Ankit Singh**  Program to make  a simple calculator in java.
+//**Ankit Singh**  Program to make  a simple calculator in java.
 
----> import java.util.Scanner;
+import java.util.Scanner;
 
 public class Calculator {
 

@@ -1,4 +1,4 @@
-This is Ankit Singh. I have contributed with Factorial using Recursion in Java.
+//This is Ankit Singh. I have contributed with Factorial using Recursion in Java.
 
 class Facto{  
  static int factorial(int n){    
