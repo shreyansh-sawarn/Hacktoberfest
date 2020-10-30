@@ -1,0 +1,9 @@
+Basic MongoDB syntax to insert a Document 
+
+use database_name
+
+db.my_collection.insertOne({
+                              "Name" : "Abhinav",
+                              "age" : 22,
+                              "Hobby" : "data_science"
+                          })  
